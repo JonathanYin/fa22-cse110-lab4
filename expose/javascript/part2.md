@@ -11,3 +11,4 @@
 9. Process exited with code 1; i is not defined
 10. 3; length is assigned to the length of the input array, which is 3
 11. [50, 100, 150]; since discountedPrice is reassigned upon each loop iteration
+12. 

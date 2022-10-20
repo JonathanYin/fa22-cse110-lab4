@@ -13,20 +13,19 @@ function sumValues(num1, num2, add){
 // sumValues(10, 10, true);
 
 function discountPrices(prices, discount) {
-    const discounted = [];
-    const length = prices.length;
-    // let finalPrice = 0;
+    var discounted = [];
+    var length = prices.length;
+    var finalPrice = 0;
 
-    for (let i = 0; i < length; i++){
-        const discountedPrice = prices[i] * (1 - discount);
-        // finalPrice = Math.round(discountedPrice * 100) / 100;
-        discounted.push(discountedPrice);
+    for (var i = 0; i < prices.length; i++){
+        var discountedPrice = prices[i] * (1 - discount);
+        finalPrice = Math.round(discountedPrice * 100) / 100;
+        discounted.push(finalPrice);
     }
     // console.log(i);
-    // console.log(length);
     // console.log(discountedPrice);
-    // console.log(finalPrice);
-    console.log(discounted);
+    console.log(finalPrice);
+    // console.log(discounted);
 
     return discounted;
 }
