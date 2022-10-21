@@ -18,7 +18,7 @@ student.greeting(); // call greeting function from student
 console.log(student["Favorite Teacher"].name);
 console.log(student.courseLoad[0]);
 
-function sumValues(num1, num2, add){
+function sumValues(num1, num2, add) {
     if (add){
         var result = 0;
         result = num1 + num2;
@@ -37,7 +37,7 @@ function discountPrices(prices, discount) {
     var length = prices.length;
     var finalPrice = 0;
 
-    for (var i = 0; i < prices.length; i++){
+    for (var i = 0; i < prices.length; i++) {
         var discountedPrice = prices[i] * (1 - discount);
         finalPrice = Math.round(discountedPrice * 100) / 100;
         discounted.push(finalPrice);
@@ -51,3 +51,17 @@ function discountPrices(prices, discount) {
 }
 
 // discountPrices([100, 200, 300], 0.5);
+
+function modifyArray(array, callback) {
+    const newArr = [];
+    for (let i = 0; i < array.length; i++) {
+        newArr.push(callback(array[i]));
+    }
+    return newArr;
+}
+
+function doSomething(num) {
+    return num * 2;
+}
+
+modifyArray([1,2,3], doSomething);
