@@ -11,4 +11,24 @@
 9. Process exited with code 1; i is not defined
 10. 3; length is assigned to the length of the input array, which is 3
 11. [50, 100, 150]; since discountedPrice is reassigned upon each loop iteration
-12. 
+12. A. student.name
+    B. student["Grad Year"]
+    C. student.greeting()
+    D. student["Favorite Teacher"].name
+    E. student.courseLoad[0]
+13. A. '32'; integer 2 is mapped to string representation
+    B. 1; string 3 is taken as integer
+    C. 3; null is taken as 0
+    D. '3null'; null is mapped to string representation
+    E. 4; true is taken as 1 in numeric conversion
+    F. 0; both are converted to 0 in numeric conversion
+    G. '3undefined'; undefined is mapped to string representation
+    H. NaN; undefined becomes NaN in numeric conversion
+14. A. true; '2' becomes a numeric 2
+    B. false; compares first character of each, with '2' > '1'
+    C. true; string '2' is converted to numeric 2
+    D. false; strict equality operator checks without type conversion
+    E. false; true has a numeric value of 1
+    F. true; Boolean(2) is equivalent to true
+15. == is an equality test, whereas === is a strict equality test, which checks equality without type conversion
+    For example, === will return false immediately with inputs of different types
