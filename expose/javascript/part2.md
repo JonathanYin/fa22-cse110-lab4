@@ -29,6 +29,6 @@
     C. true; string '2' is converted to numeric 2
     D. false; strict equality operator checks without type conversion
     E. false; true has a numeric value of 1
-    F. true; Boolean(2) is equivalent to true
+    F. true; Boolean() function with input 2 is equivalent to true
 15. == is an equality test, whereas === is a strict equality test, which checks equality without type conversion
     For example, === will return false immediately with inputs of different types
