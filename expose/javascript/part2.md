@@ -32,3 +32,11 @@
     F. true; Boolean() function with input 2 is equivalent to true
 15. == is an equality test, whereas === is a strict equality test, which checks equality without type conversion
     For example, === will return false immediately with inputs of different types
+
+16. see part2-question16.js
+17. newArr = [2, 4, 6]; we pass in doSomething() as a function to multiply each element of the input array by 2, storing it in newArr
+18. see part2-question18.js
+19. 1
+    4
+    2
+    3

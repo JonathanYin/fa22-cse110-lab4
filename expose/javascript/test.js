@@ -12,11 +12,11 @@ let student = {
     courseLoad: ['CSE 110', 'CSE 134', 'VIS 41']
 };
 
-console.log(student.name);
-console.log(student["Grad Year"]);
-student.greeting(); // call greeting function from student
-console.log(student["Favorite Teacher"].name);
-console.log(student.courseLoad[0]);
+// console.log(student.name);
+// console.log(student["Grad Year"]);
+// student.greeting(); // call greeting function from student
+// console.log(student["Favorite Teacher"].name);
+// console.log(student.courseLoad[0]);
 
 function sumValues(num1, num2, add) {
     if (add){
@@ -57,11 +57,26 @@ function modifyArray(array, callback) {
     for (let i = 0; i < array.length; i++) {
         newArr.push(callback(array[i]));
     }
+    console.log(newArr);
     return newArr;
 }
 
 function doSomething(num) {
+    console.log(num * 2);
     return num * 2;
 }
 
-modifyArray([1,2,3], doSomething);
+// modifyArray([1,2,3], doSomething);
+
+let d = new Date();
+let time = d.toLocaleDateString();
+// console.log(time);
+
+function printNums() {
+    console.log(1);
+    setTimeout(function() { console.log(2); }, 1000);
+    setTimeout(function() { console.log(3); }, 1000);
+    console.log(4);
+}
+
+printNums();
