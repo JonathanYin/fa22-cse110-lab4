@@ -7,8 +7,8 @@ let statistics = {
     rareCars: 2
 };
 
-for (var property in statistics) {
-    if (property.charAt(0) == 'r' || statistics[property] % 2 == 1){
-        console.log(property);
+for (const key in statistics) {
+    if (key.startsWith('r') || statistics[key] % 2 !== 0) {
+        console.log(statistics[key]);
     }
 }
